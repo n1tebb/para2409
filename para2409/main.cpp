@@ -28,11 +28,12 @@ int main () {
             std::cin >> choice;
             
             if (choice >= 1 && choice <= 5) {
-                break;
+                break;  // Если выбор правильный, выходим из цикла
             } else {
-                std::cout << "неверный выбор...\n";
+                std::cout << "Неверный выбор. Попробуйте снова...\n";
             }
-            
+        }
+    
             comission = rub * COMMISION;
             double rubCOMM = rub - comission; //остаток после комки
             
@@ -54,8 +55,6 @@ int main () {
             }
             
             std::cout << "комиссия за обмен = " << comission << " рублей\n";
-            
-        }
         
         std::cout << "хотите повторить обмен?(y - да, n - нет)";
         std::cin >> repeat;
